@@ -8,17 +8,17 @@
 	</head>
 	<body scroll="no">
 		<div class="header">
-			<div class="logo">bagecms.com</div>
+			<div class="logo">锐意内容管理系统</div>
 		<div class="nav">
 			<ul>
 				<li index="0" class="active">
 					<div>
-						<a href="/index.php?r=admini/default/home" target="win" hidefocus="">首页</a>
+						<a href="/admin/default/home" target="win" hidefocus="">首页</a>
 					</div>
 				</li>
 				<li index="1">
 					<div>
-						<a href="/index.php?r=admini/config/index" target="win" hidefocus="">设置</a>
+						<a href="/index.php?r=admin/config/index" target="win" hidefocus="">设置</a>
 					</div>
 				</li>
 			</ul>
@@ -28,7 +28,7 @@
 				<img src="/static/admin/images/user_edit.png" align="absmiddle"> 欢迎, <em>hejun</em>
 			</span>
 			<a href="/index.php?r=admini/admin/ownerUpdate" target="win">修改密码</a> <a href="/index.php?r=admini/public/logout" target="_top">退出登录</a>
-			<a href="/index.php" target="_blank">前台首页</a></div>
+			<a href="/" target="_blank">前台首页</a></div>
 		</div>
 		<div class="topline">
 			<div class="toplineimg left" id="imgLine"></div>
@@ -38,7 +38,7 @@
 				<div id="leftmenu" class="menu">
 					<ul index="0" class="left_menu" style="display: block;">
 						<li index="0" class="active">
-							<a href="/index.php?r=admini/default/home" target="win">系统首页</a>
+							<a href="/admin/default/home" target="win">系统首页</a>
 						</li>
 						<li index="1">
 							<a href="/index.php?r=admini/catalog/index" target="win">栏目管理</a>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 			<div class="mainB" id="mainB" style="width: 1280px;">
-				<iframe src="/index.php?r=admini/default/home" name="win" id="win" width="100%" height="100%" frameborder="0"></iframe>
+				<iframe src="/admin/default/home" name="win" id="win" width="100%" height="100%" frameborder="0"></iframe>
 			</div>
 		</div>
 	</body>
