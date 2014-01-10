@@ -8,5 +8,7 @@
  */
 class Controller extends CController{
 	public $breadcrumbs=array();
+	//定义系统版本
+	public $version = "v1.0";
 }
 ?>
