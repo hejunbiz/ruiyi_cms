@@ -7,6 +7,8 @@
  * @Version		v1.0
  */
 class AdminModule extends CWebModule{
-	
+	public function actionIndexa(){
+		echo 'Index';
+	}
 }
 ?>
