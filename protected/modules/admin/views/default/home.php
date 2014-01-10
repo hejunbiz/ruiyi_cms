@@ -1,4 +1,4 @@
-<?php $this->renderPartial('_include/header');?>
+<?php $this->renderPartial('include/header');?>
 <table class="content_list">
 	<thead>
 		<tr >
@@ -46,4 +46,4 @@
 		<td ><?php echo $server['phpVersion']; ?></td>
 	</tr>
 </table>
-<?php $this->renderPartial('_include/footer');?>
+<?php $this->renderPartial('include/footer');?>
