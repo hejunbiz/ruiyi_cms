@@ -1,7 +1,9 @@
 <?php
 class SiteController extends Controller{
 	public function actionIndex(){
-		echo 'Hello World';
+		$data['head'] = $this->head();
+		$data['baseHref'] = '/static';
+		$this->render('index',$data);
 	}
 	//错误处理页面
 	public function actionError(){
