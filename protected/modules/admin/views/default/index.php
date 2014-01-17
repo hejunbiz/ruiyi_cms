@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="/static/admin/css/manage.css">
-		<script type="text/javascript" src="/static/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/static/javascript/jquery/jquery.js"></script>
 		<title>后台管理系统</title>
 	</head>
 	<body scroll="no">
@@ -25,7 +25,7 @@
 		</div>
 		<div class="logininfo">
 			<span class="welcome">
-				<img src="/static/admin/images/user_edit.png" align="absmiddle"> 欢迎, <em>hejun</em>
+				<img src="/static/admin/images/user_edit.png" align="absmiddle"> 欢迎, <em>HeJun</em>
 			</span>
 			<a href="/index.php?r=admini/admin/ownerUpdate" target="win">修改密码</a> <a href="/index.php?r=admini/public/logout" target="_top">退出登录</a>
 			<a href="/" target="_blank">前台首页</a></div>
