@@ -18,6 +18,7 @@ class Controller extends CController{
 			'robots' => 'index, follow',
 			'author' => 'HeJun',
 			'keywords' => 'hejun,何军,锐意翱翔,www.hejun.biz,hejunbiz',
+			'viewport' => 'width=device-width, initial-scale=1, maximum-scale=1',
 			'alternate' => array(
 				'href' => 'http://www.hejun.biz/feed',
 				'title' => 'www.hejun.biz',

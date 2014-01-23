@@ -1,10 +1,11 @@
 <?php
-class AboutController extends Controller{
-	//关于首页
+class ContactController extends Controller{
+	//联系首页
 	public function actionIndex(){
 		$data = array();
 		$data['head'] = $this->head();
-		$data['title'] = '关于我';
+		$data['title'] = '联系我';
+		$contacts = array();
 		$this->render('index',$data);
 	}
 }

@@ -62,10 +62,17 @@ class Utils{
 	 */
 	public static function getRealLocationByIp(){
 		$ip = Utils::getClientIP();
-		$ip = '115.29.178.41';
+		//$ip = '15.29.78.41';
 		$url = "http://ip.taobao.com/service/getIpInfo.php?ip=".$ip;
 		$contents = file_get_contents($url);
-		Utils::dump(Utils::objToArr(json_decode($contents)));
+		return Utils::objToArr(json_decode($contents));
+	}
+
+	/**
+	 * 获取浏览器信息及硬件信息
+	 */
+	public static function getRemoteSystemInfo(){
+		Utils::dump($_SERVER);
 	}
 	
 	/**
@@ -491,7 +498,7 @@ html,body,div,p,a,h3{margin:0;padding:0;}
      */
     public static function clearCutstr ($subject, $length = 0, $dot = '...', $charset = 'utf-8'){
         if ($length) {
-            return XUtils::cutstr(strip_tags(str_replace(array ("\r\n" ), '', $subject)), $length, $dot, $charset);
+            return Utils::cutstr(strip_tags(str_replace(array ("\r\n" ), '', $subject)), $length, $dot, $charset);
         } else {
             return strip_tags(str_replace(array ("\r\n" ), '', $subject));
         }
