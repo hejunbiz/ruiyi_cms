@@ -37,6 +37,7 @@
 					<li><a href="/about">关于</a></li>
 					<li><a href="/life">生活</a></li>
 					<li><a href="/album">专辑</a></li>
+					<li><a href="/footprints">足迹</a></li>
 					<li><a href="/jobs">工作</a></li>
 					<li><a href="/contact">联系</a></li>
 					<li><a href="/blog">博客</a></li>

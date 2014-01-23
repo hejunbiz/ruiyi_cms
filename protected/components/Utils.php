@@ -57,6 +57,28 @@ class Utils{
         $ip = ( false !== ip2long( $ip ) ) ? $ip : '0.0.0.0';
         return $ip;
     }
+	/**
+	 * 根据IP获取实际地址
+	 */
+	public static function getRealLocationByIp(){
+		$ip = Utils::getClientIP();
+		$ip = '115.29.178.41';
+		$url = "http://ip.taobao.com/service/getIpInfo.php?ip=".$ip;
+		$contents = file_get_contents($url);
+		Utils::dump(Utils::objToArr(json_decode($contents)));
+	}
+	
+	/**
+	 * 对象转数组
+	 */
+	public static function objToArr($obj){
+		$_arr = is_object($obj) ? get_object_vars($obj) : $obj;
+		foreach ($_arr as $key => $val){
+			$val = (is_array($val) || is_object($val)) ? Utils::objToArr($val) : $val;
+			$arr[$key] = $val;
+		}
+		return $arr;
+	}
 
     /**
      * 循环创建目录
