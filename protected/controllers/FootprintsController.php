@@ -4,7 +4,6 @@ class FootprintsController extends Controller{
 		//获取用户ip
 		//$ip = Utils::getClientIP();
 		Utils::getRemoteSystemInfo();
-		exit;
 		$data = array();
 		$this->render('index',$data);
 	}

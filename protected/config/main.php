@@ -27,10 +27,10 @@ return array(
 	),
 	'components'=>array(
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=dev',
+			'connectionString' => 'mysql:host=192.168.1.184;dbname=dev',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '123123',
+			'password' => 'david2012',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tb_',
 		),
